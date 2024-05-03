@@ -39,13 +39,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FresnelPower: 2
+    - _FresnelPower: 1.66
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Back_Color: {r: 1, g: 1, b: 1, a: 1}
-    - _FresnelColor: {r: 1, g: 1, b: 1, a: 0}
-    - _Front_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Back_Color: {r: 0.9221513, g: 0.3041651, b: 0, a: 1}
+    - _FresnelColor: {r: 25.688938, g: 5.7833734, b: 0, a: 1}
+    - _Front_Color: {r: 0.57434916, g: 0.056308743, b: 0, a: 1}
+    - _VertexAmount: {r: 0.1, g: 0.1, b: 0.1, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &6742851495152994398
 MonoBehaviour:
