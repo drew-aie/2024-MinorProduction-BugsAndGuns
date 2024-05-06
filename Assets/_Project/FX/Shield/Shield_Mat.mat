@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HoneyShieldShader_BNG 1
+  m_Name: Shield_Mat
   m_Shader: {fileID: -6465566751694194690, guid: f2b30eb9745be85449e33a589e40c788,
     type: 3}
   m_ValidKeywords: []
