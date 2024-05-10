@@ -31,7 +31,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""name"": ""Move"",
                     ""type"": ""Value"",
                     ""id"": ""6883c53c-0d1e-4bba-af40-d9f460fb18cf"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Vector3"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -41,7 +41,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""WASD"",
                     ""id"": ""4fec2715-67f3-4c96-8274-ef5927e6b6c5"",
-                    ""path"": ""2DVector"",
+                    ""path"": ""3DVector"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -50,8 +50,8 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""up"",
-                    ""id"": ""296a439a-601d-41f6-b61b-6b4d2a98c832"",
+                    ""name"": ""Forward"",
+                    ""id"": ""0937d156-ad8b-4f00-98c0-bcf02d6d7e67"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -61,18 +61,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""down"",
-                    ""id"": ""74122faf-596d-4037-bb6a-e1bec37fb72e"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
+                    ""name"": ""Left"",
                     ""id"": ""e2cc3fd5-caeb-4727-8c53-447a9ae5c96f"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
@@ -83,7 +72,18 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""right"",
+                    ""name"": ""Backward"",
+                    ""id"": ""82bc7d29-4219-4ce5-971e-df0672f8c1ac"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Right"",
                     ""id"": ""e7ac6332-12fe-4cc6-a8f1-8625357ef360"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",

@@ -6,8 +6,8 @@ using UnityEngine.InputSystem;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    [SerializeField, Tooltip("Player max speed")] private float _maxSpeed;
-    [SerializeField, Tooltip("Player Acceleration")] private float _acceleration;
+    [SerializeField, Tooltip("The speed which the player can't pass")] private float _maxSpeed;
+    [SerializeField, Tooltip("How fast the player reaches max speed")] private float _acceleration;
 
     private Rigidbody _rigidBody;
     private Vector3 _movementInput;
@@ -24,9 +24,13 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void Update()
     {
-        Vector3 force = _movementInput * _acceleration * Time.deltaTime;
-        _rigidBody.MovePosition(force);
+        //Move the player's RigidBody towards the movement input given
+        _rigidBody.MovePosition(transform.position + _movementInput * _acceleration * Time.deltaTime);
 
-        Debug.Log(_movementInput);
+        //Clamp velocity to _maxSpeed
+        Vector3 velocity = _rigidBody.velocity;
+        float newXSpeed = Mathf.Clamp(_rigidBody.velocity.x, -_maxSpeed, _maxSpeed);
+        velocity.x = newXSpeed;
+        _rigidBody.velocity = velocity;
     }
 }

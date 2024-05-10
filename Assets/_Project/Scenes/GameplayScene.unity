@@ -143,12 +143,12 @@ PrefabInstance:
     - target: {fileID: 60115109759667105, guid: d20ee2f2468978246b41a5e020ba2a43,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1
+      value: 2.03
       objectReference: {fileID: 0}
     - target: {fileID: 60115109759667105, guid: d20ee2f2468978246b41a5e020ba2a43,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.22
+      value: 4.72
       objectReference: {fileID: 0}
     - target: {fileID: 60115109759667105, guid: d20ee2f2468978246b41a5e020ba2a43,
         type: 3}
@@ -188,17 +188,27 @@ PrefabInstance:
     - target: {fileID: 1161609626520707445, guid: d20ee2f2468978246b41a5e020ba2a43,
         type: 3}
       propertyPath: _maxSpeed
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1161609626520707445, guid: d20ee2f2468978246b41a5e020ba2a43,
         type: 3}
       propertyPath: _acceleration
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2783488136288345734, guid: d20ee2f2468978246b41a5e020ba2a43,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248132849855583974, guid: d20ee2f2468978246b41a5e020ba2a43,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248132849855583974, guid: d20ee2f2468978246b41a5e020ba2a43,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d20ee2f2468978246b41a5e020ba2a43, type: 3}
@@ -494,15 +504,15 @@ MonoBehaviour:
       points:
       - {x: 17.168423, y: 0, z: 53.36502}
       - {x: 6.3313093, y: 0, z: 50.703266}
-      - {x: 2.3169878, y: 0, z: 37.698746}
-      - {x: 5.846179, y: 0, z: 36.654484}
-      - {x: 11.401911, y: 0, z: 35.010582}
-      - {x: 12.699226, y: 0, z: 11.464504}
-      - {x: 4.6556644, y: 0, z: 17.646053}
-      - {x: -10.315024, y: 0, z: 29.151161}
-      - {x: 28.377327, y: 0.08977318, z: 22.005878}
-      - {x: 28.511738, y: 0, z: 17.470318}
-      - {x: 29.06046, y: -0.36649197, z: -1.0457535}
+      - {x: 2.3169878, y: 1.1081812, z: 37.698746}
+      - {x: 5.846179, y: 1.1081812, z: 36.654484}
+      - {x: 11.401911, y: 1.1081812, z: 35.010582}
+      - {x: 12.699226, y: 2.0622754, z: 11.464504}
+      - {x: 4.6556644, y: 2.0622754, z: 17.646053}
+      - {x: -10.315024, y: 2.0622754, z: 29.151161}
+      - {x: 28.377327, y: 1.2309989, z: 22.005878}
+      - {x: 28.511738, y: 1.1412257, z: 17.470318}
+      - {x: 29.06046, y: 0.7747337, z: -1.0457535}
       - {x: -0.50190544, y: 0, z: 6.217224}
       - {x: 13.627219, y: 0, z: -1.6265259}
       isClosed: 0
@@ -521,7 +531,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 90
       flipNormals: 0
-    vertexPathUpToDate: 1
+    vertexPathUpToDate: 0
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
