@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2156881444111831174}
   - component: {fileID: 4182224984316978252}
   m_Layer: 0
-  m_Name: mushroomdome
+  m_Name: Mushroom_Dome_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
