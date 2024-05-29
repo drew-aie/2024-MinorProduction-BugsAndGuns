@@ -5,14 +5,18 @@ using UnityEngine;
 public class ProjectileBehaviour : MonoBehaviour
 {
     private Rigidbody _rigidbody;
+
     [Tooltip("How much damage this bullet will do.")]
     [SerializeField]
     private float _damage;
+
     [Tooltip("The amount of time it takes for this bullet to despawn after being fired.")]
     [SerializeField]
     private float _despawnTime;
 
-    [SerializeField, Tooltip("This bullet will not hurt anything with this tag")] private string _tag;
+    [Tooltip("This bullet will not hurt anything with this tag")]
+    [SerializeField]
+    private string _tag;
 
     public Rigidbody Rigidbody
     {
@@ -45,13 +49,16 @@ public class ProjectileBehaviour : MonoBehaviour
         if (other.gameObject.tag == _tag)
             return;
 
-        //Grab the health behaviour attached to the object
-         HealthBehaviour health = other.GetComponent<HealthBehaviour>();
-
-        print(other.gameObject.name);
+        //Grab the health or life behaviour attached to the object
+        HealthBehaviour health = other.GetComponent<HealthBehaviour>();
+        PlayerLifeBehaviour lives = other.GetComponent<PlayerLifeBehaviour>();
 
         //If the health behaviour isn't null, deal damage
         if (health)
             health.TakeDamage(Damage);
+
+        //If the life behaviour isn't null, subtract a life
+        if (lives)
+            lives.LoseLife();
     }
 }
