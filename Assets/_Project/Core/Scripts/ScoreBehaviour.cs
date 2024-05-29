@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class ScoreBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int _pointValue;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private ScoreCounterBehaviour _scoreCounter;
+
+    private void OnDestroy()
     {
-        
+        _scoreCounter.AddScore(_pointValue);
     }
 }
