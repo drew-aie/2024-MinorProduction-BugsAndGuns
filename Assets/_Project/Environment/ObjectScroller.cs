@@ -38,7 +38,7 @@ public class ObjectScroller : MonoBehaviour
         foreach (Transform item in _children)
         {
             // Update item position
-            item.position += new Vector3(0, 0, _scrollSpeed) * Time.deltaTime;
+            item.position += new Vector3(0, 0, -_scrollSpeed) * Time.deltaTime;
 
             // If item has gone below _maxDistance, reset it to the top
             if (item.position.z > _maxDistance)
