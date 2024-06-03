@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class ScoreCounterBehaviour : MonoBehaviour
 {
-    [SerializeField] private TextMeshPro _text;
+    [SerializeField] private TextMeshProUGUI _text;
 
-    private int _currentScore;
+    private int _currentScore = 0;
 
-    public void Start()
+    private void Update()
     {
-        _text.text = "Current Score:" + _currentScore;
+        _text.text = "Current Score: " + _currentScore;
     }
 
     public void AddScore(int value)
