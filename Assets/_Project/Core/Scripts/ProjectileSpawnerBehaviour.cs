@@ -19,8 +19,6 @@ public class ProjectileSpawnerBehaviour : MonoBehaviour
         if (Time.time < _lastFireTime + (1 / (_fireRate / 60)))
             return;
 
-        _lastFireTime = Time.time;
-
         //Spawn a new bullet
         GameObject firedBullet = Instantiate(_bullet, transform.position, transform.rotation);
         //Get a reference to the attached bullet script
@@ -28,5 +26,8 @@ public class ProjectileSpawnerBehaviour : MonoBehaviour
         //If the script isn't null, move the projectile's position
         if (bulletScript)
             bulletScript.Rigidbody.AddForce(force, ForceMode.Impulse);
+
+        _lastFireTime = Time.time;
     }
 }
+
