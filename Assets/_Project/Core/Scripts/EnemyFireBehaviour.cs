@@ -17,6 +17,6 @@ public class EnemyFireBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _projectileSpawner.Fire(transform.forward * _shotSpeed);
+        _projectileSpawner.Fire(transform.forward * _shotSpeed * Time.deltaTime);
     }
 }
