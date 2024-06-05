@@ -42,13 +42,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   shadows:
-    m_OverrideState: 0
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0.764151, g: 0.71729267, b: 0.75002503, a: 1}
   highlights:
-    m_OverrideState: 0
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0.69900316, g: 0.7924528, b: 0.7430046, a: 1}
   balance:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
 --- !u!114 &-2973635187560859152
 MonoBehaviour:
@@ -89,8 +89,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: {x: 1, y: 0.96680945, z: 0.9668083, w: -0.011123384}
   midtones:
-    m_OverrideState: 0
-    m_Value: {x: 1, y: 0.9563798, z: 0.6585728, w: 0.10011124}
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.7720445, z: 0.9621265, w: 0.06741572}
   highlights:
     m_OverrideState: 1
     m_Value: {x: 0.96483576, y: 1, z: 0.8153207, w: 0.033370238}
