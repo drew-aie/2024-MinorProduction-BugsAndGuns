@@ -24,9 +24,12 @@ public class NewBehaviourScript : MonoBehaviour
         DYING
     };
 
+    private Animator _animator;
+
     public void Awake()
     {
         _rigidBody = GetComponent<Rigidbody>();
+        _animator = GetComponentInChildren<Animator>();
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -66,5 +69,9 @@ public class NewBehaviourScript : MonoBehaviour
         {
             _projectileSpawner.Fire(transform.forward * _shotSpeed);
         }
+        _animator.SetFloat("Idle-Side", _movementInput.x);
+        _animator.SetBool("IsShooting", _isShooting);
+        _animator.SetFloat("Attack-Side", _movementInput.x);
+        _animator.SetFloat("Attack-Forward", _movementInput.z);
     }
 }
