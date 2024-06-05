@@ -10,6 +10,13 @@ public class PlayerLifeBehaviour : MonoBehaviour
 
     private bool _isInvincible = false;
 
+    private Animator _animator;
+
+    private void Awake()
+    {
+        _animator = GetComponentInChildren<Animator>();
+    }
+
     public int Lives
     {
         get
@@ -48,6 +55,10 @@ public class PlayerLifeBehaviour : MonoBehaviour
         Debug.Log(_isInvincible);
         //If the player has no lives remaining, destroy the player.
         if (_remainingLives <= 0)
+        {
+            _animator.SetBool("PlayerDeath", true);
             Destroy(gameObject);
+        }
+            
     }
 }
