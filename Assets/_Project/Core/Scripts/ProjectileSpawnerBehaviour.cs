@@ -14,10 +14,10 @@ public class ProjectileSpawnerBehaviour : MonoBehaviour
     /// Spawns a bullet and applies the given force.
     /// </summary>
     /// <param name="force"></param>
-    public void Fire(Vector3 force)
+    public bool Fire(Vector3 force)
     {
         if (Time.time < _lastFireTime + (1 / (_fireRate / 60)))
-            return;
+            return false;
 
         //Spawn a new bullet
         GameObject firedBullet = Instantiate(_bullet, transform.position, transform.rotation);
@@ -28,6 +28,7 @@ public class ProjectileSpawnerBehaviour : MonoBehaviour
             bulletScript.Rigidbody.AddForce(force, ForceMode.Impulse);
 
         _lastFireTime = Time.time;
+        return true;
     }
 }
 

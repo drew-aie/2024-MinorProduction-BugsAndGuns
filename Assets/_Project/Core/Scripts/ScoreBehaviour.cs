@@ -7,7 +7,7 @@ public class ScoreBehaviour : MonoBehaviour
 {
     [SerializeField] private int _pointValue;
 
-    [SerializeField] private ScoreCounterBehaviour _scoreCounter;
+    [SerializeField] static ScoreCounterBehaviour _scoreCounter;
 
     private void OnDestroy()
     {
