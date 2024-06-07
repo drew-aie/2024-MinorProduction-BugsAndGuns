@@ -19,6 +19,8 @@ public class EnemySpawnerBehaviour : MonoBehaviour
 
     [SerializeField] private float _currentSpawnInterval;
 
+    [SerializeField] private float _despawnTimer = 5f;
+
     private void Start()
     {
         _pathFollower = _enemy.GetComponent<PathFollower>();
@@ -31,6 +33,11 @@ public class EnemySpawnerBehaviour : MonoBehaviour
 
         if (_currentSpawnInterval <= 0.000001f)
             StartCoroutine(SpawnEnemy());
+
+        _despawnTimer -= Time.deltaTime;
+
+        if (_despawnTimer <= 0.000001f)
+            DespawnEnemy();
     }
 
     public IEnumerator SpawnEnemy()
@@ -46,7 +53,14 @@ public class EnemySpawnerBehaviour : MonoBehaviour
         _currentSpawnInterval = _defaultSpawnInterval;
 
         //If the spawn interval is greater than 4 seconds, subtract 2 seconds.
-        if (_defaultSpawnInterval >= 4.00000)
+        if (_defaultSpawnInterval >= 7.00000)
             _defaultSpawnInterval -= 2;
+    }
+
+    public void DespawnEnemy()
+    {
+        Destroy(_enemy);
+
+        _despawnTimer = 5f;
     }
 }
