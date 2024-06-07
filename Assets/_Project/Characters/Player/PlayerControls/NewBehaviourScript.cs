@@ -14,23 +14,43 @@ public class NewBehaviourScript : MonoBehaviour
     private Rigidbody _rigidBody;
     private Vector3 _movementInput;
     private bool _isShooting = false;
+    private State _currentState;
+
+    enum State
+    {
+        IDLE,
+        MOVING,
+        ATTACKING,
+        DYING
+    };
+
+    private Animator _animator;
 
     public void Awake()
     {
         _rigidBody = GetComponent<Rigidbody>();
+        _animator = GetComponentInChildren<Animator>();
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
         _movementInput = context.action.ReadValue<Vector3>();
+        _currentState = State.MOVING;
     }
 
     public void OnShoot(InputAction.CallbackContext context)
     {
         if (context.performed)
+        {
             _isShooting = true;
+            _currentState = State.ATTACKING;
+        }
+
         else if (context.canceled)
+        {
             _isShooting = false;
+            _currentState = State.IDLE;
+        }
     }
 
     private void Update()
@@ -49,5 +69,9 @@ public class NewBehaviourScript : MonoBehaviour
         {
             _projectileSpawner.Fire(transform.forward * _shotSpeed);
         }
+        _animator.SetFloat("Idle-Side", _movementInput.x);
+        _animator.SetBool("IsShooting", _isShooting);
+        _animator.SetFloat("Attack-Side", _movementInput.x);
+        _animator.SetFloat("Attack-Forward", _movementInput.z);
     }
 }
