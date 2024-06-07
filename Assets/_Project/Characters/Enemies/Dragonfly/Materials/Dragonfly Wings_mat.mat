@@ -152,8 +152,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     - _k: 3
-    - _n2: 1.5
-    - _n3: 1.6
+    - _n2: 1.9
+    - _n3: 1.96
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
