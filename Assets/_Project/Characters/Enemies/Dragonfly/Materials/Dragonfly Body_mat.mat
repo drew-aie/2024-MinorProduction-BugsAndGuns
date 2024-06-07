@@ -21,21 +21,23 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Dragonfly Body_mat
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ValidKeywords:
-  - _METALLICSPECGLOSSMAP
-  - _NORMALMAP
+  m_Shader: {fileID: -6465566751694194690, guid: 7c1a9211203f4524bb93b6c3a86918ea,
+    type: 3}
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseColor_Map:
+        m_Texture: {fileID: 2800000, guid: b25cdf698de8a5a4db88831b9939fdf1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: b25cdf698de8a5a4db88831b9939fdf1, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -60,12 +62,24 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Fresnel_Mask:
+        m_Texture: {fileID: 2800000, guid: 744de1fc958f184408eaa62399791add, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: b25cdf698de8a5a4db88831b9939fdf1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Metal_Map:
+        m_Texture: {fileID: 2800000, guid: 0af6196c50f7ded40977c355dd7d11e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 2800000, guid: 0af6196c50f7ded40977c355dd7d11e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal_Map:
+        m_Texture: {fileID: 2800000, guid: 13d3db07b4fcc984bb2ebb5f0b357735, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -78,6 +92,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_1af94060e0b54cfa883a7b6449e32df0_Out_0:
+        m_Texture: {fileID: 2800000, guid: 060977262a746344387a9beca7afa9cc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Thin_Film_Mask:
+        m_Texture: {fileID: 2800000, guid: be45e3972bceb3148ab28d9c5ace1ea4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -105,24 +127,39 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
+    - _Fresnel_Add: -0.2
+    - _Fresnel_Power: 2
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _Hit_flash_Opacity: 0
     - _Metallic: 0
+    - _Metallic_Add: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
+    - _Smoothness_Add: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _Thickness: 0.07
+    - _Thin_Film_Opacity: 0
+    - _Thin_Film_Opacity_Add: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - _k: 3
+    - _n2: 1.5
+    - _n3: 1.6
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Fresnel_Color: {r: 0.60920256, g: 0.6981132, b: 0.5499288, a: 0}
+    - _Hit_Flash_Color: {r: 1, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _Tint: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
