@@ -129,20 +129,7 @@ MonoBehaviour:
     m_ActionId: ba08987d-bc8a-461d-84f7-4cf5eca27417
     m_ActionName: Movement/Fire[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6860995992045948861, guid: d2c1dbbfe08616142ba9e4fff4fa7b26,
-          type: 3}
-        m_TargetAssemblyTypeName: PauseMenuController, Assembly-CSharp
-        m_MethodName: OnPause
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 8fb6ecb2-efc6-4563-ad27-5102137a7ce3
     m_ActionName: Movement/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
