@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2564006883946184252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3705681982856373415}
+  m_Layer: 0
+  m_Name: trowel_prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3705681982856373415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2564006883946184252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.07518542, y: -0.19429052, z: 1.9206109}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4528373317092044624}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4130569379901180091
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3705681982856373415}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07518542
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.19429052
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9206109
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4321573815040470207, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d4a542d0904d2164fa753edcc263d623, type: 2}
+    - target: {fileID: 919132149155446097, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_Name
+      value: trowel_mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 5872738848378405355, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 09e7028f30e1bc645b636d20e832f9be, type: 2}
+    - target: {fileID: 6863849587957680595, guid: 3efbb45b661b23948a78c8be7994bf69,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a0182ec3ea47c84eb3ee67d0882edf8, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3efbb45b661b23948a78c8be7994bf69, type: 3}
+--- !u!4 &4528373317092044624 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3efbb45b661b23948a78c8be7994bf69,
+    type: 3}
+  m_PrefabInstance: {fileID: 4130569379901180091}
+  m_PrefabAsset: {fileID: 0}
