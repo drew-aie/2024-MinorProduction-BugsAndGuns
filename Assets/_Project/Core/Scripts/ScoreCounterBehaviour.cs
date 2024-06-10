@@ -17,8 +17,6 @@ public class ScoreCounterBehaviour : MonoBehaviour
         if (_instance == null)
             _instance = this;
 
-
-
         else if (_instance != this)
         {
             Destroy(gameObject);
