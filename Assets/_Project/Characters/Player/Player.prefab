@@ -171,6 +171,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 60115109759667105}
     m_Modifications:
+    - target: {fileID: 1021463440247599359, guid: 721b7948f06053d4a8d260f3bd3ca0ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4707322302300092652, guid: 721b7948f06053d4a8d260f3bd3ca0ce,
         type: 3}
       propertyPath: m_RootOrder
@@ -231,6 +236,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Queen_Mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 5339039473528119894, guid: 721b7948f06053d4a8d260f3bd3ca0ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018792545390964799, guid: 721b7948f06053d4a8d260f3bd3ca0ce,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: eb22cf07de0ee1a47ba696e1dc0f8a4d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 721b7948f06053d4a8d260f3bd3ca0ce, type: 3}
 --- !u!4 &1635452779514322465 stripped
