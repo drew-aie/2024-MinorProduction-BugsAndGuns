@@ -57,7 +57,7 @@ public class ObjectScroller : MonoBehaviour
     {
         Vector3 end = transform.position + new Vector3(0, 0, _maxDistance);
         Gizmos.color = Color.green;
-        Gizmos.DrawSphere(transform.position, 0.1f);
+        Gizmos.DrawSphere(transform.position, 10f);
         Gizmos.DrawLine(transform.position, end);
         Gizmos.DrawSphere(end, 0.1f);
     }
