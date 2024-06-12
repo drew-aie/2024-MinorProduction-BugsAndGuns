@@ -26,7 +26,7 @@ public class ScoreCounterBehaviour : MonoBehaviour
 
     private void Update()
     {
-        _text.text = "Current Score: " + _instance._currentScore;
+        _text.text = "Score: " + _instance._currentScore;
     }
 
     public void AddScore(int value)
