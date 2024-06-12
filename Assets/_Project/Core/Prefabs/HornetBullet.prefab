@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 2
-  _despawnTime: 2
+  _despawnTime: 1.6
   _tag: Enemy
 --- !u!54 &502440296710507404
 Rigidbody:

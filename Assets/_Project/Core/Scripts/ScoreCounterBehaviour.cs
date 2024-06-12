@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ScoreCounterBehaviour : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _text;
+    [SerializeField] private TMP_Text _text;
 
     static ScoreCounterBehaviour _instance = null;
 
@@ -14,19 +15,18 @@ public class ScoreCounterBehaviour : MonoBehaviour
     private void Awake()
     {
         if (_instance == null)
-            _instance = new ScoreCounterBehaviour();
+            _instance = this;
 
-        else if(_instance != this)
+        else if (_instance != this)
         {
             Destroy(gameObject);
         }
 
-        _instance = this;
     }
 
     private void Update()
     {
-        _text.text = "Current Score: " + _instance._currentScore;
+        _text.text = "Score: " + _instance._currentScore;
     }
 
     public void AddScore(int value)
