@@ -3,7 +3,22 @@ guid: 462e6ca051fe56e41910c32ed76a799b
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DragonFlyWings1
+    second: {fileID: 2100000, guid: 6a26e209efc3fb043a2ae6dd1cd36455, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DragonflyBody1
+    second: {fileID: 2100000, guid: 89bf68e88d6c084428359ac165c3d931, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DragonflyHead2
+    second: {fileID: 2100000, guid: 21e122e03fd9ad6488d233ac1c44f655, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
