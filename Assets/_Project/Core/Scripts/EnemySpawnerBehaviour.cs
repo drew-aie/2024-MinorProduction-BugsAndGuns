@@ -23,6 +23,7 @@ public class EnemySpawnerBehaviour : MonoBehaviour
 
     private float _currentSpawnInterval;
 
+    private GameObject _newEnemy;
 
     private void Update()
     {
@@ -34,15 +35,15 @@ public class EnemySpawnerBehaviour : MonoBehaviour
         _despawnTimer -= Time.deltaTime;
 
         if (_despawnTimer <= 0.000001f)
-            DespawnEnemy();
+            DespawnEnemy(_newEnemy);
     }
 
     public IEnumerator SpawnEnemy()
     {
         //Spawn the enemy.
-        GameObject NewEnemy = Instantiate(_enemy);
+        _newEnemy = Instantiate(_enemy);
 
-        _pathFollower = NewEnemy.GetComponent<PathFollower>();
+        _pathFollower = _newEnemy.GetComponent<PathFollower>();
         _pathFollower.pathCreator = _pathCreator;
 
         //Wait until the spawn interval is up.
@@ -57,9 +58,9 @@ public class EnemySpawnerBehaviour : MonoBehaviour
             _defaultSpawnInterval -= 2;
     }
 
-    public void DespawnEnemy()
+    public void DespawnEnemy(GameObject enemy)
     {
-        Destroy(_enemy);
+        Destroy(enemy);
 
         //Reset the despawn timer.
         _despawnTimer = _defaultDespawnInterval;
