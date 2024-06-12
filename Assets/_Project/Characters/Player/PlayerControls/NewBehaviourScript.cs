@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO.Pipes;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -49,7 +50,6 @@ public class NewBehaviourScript : MonoBehaviour
         else if (context.canceled)
         {
             _isShooting = false;
-            _currentState = State.IDLE;
         }
     }
 
