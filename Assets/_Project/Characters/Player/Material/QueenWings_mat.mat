@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: QueenBody_mat
+  m_Name: QueenWings_mat
   m_Shader: {fileID: -6465566751694194690, guid: 612b1461231dd944c8637f138b85d49c,
     type: 3}
   m_ValidKeywords: []
@@ -106,7 +106,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _Fresnel_Power: 4
+    - _Fresnel_Power: 1.29
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -123,8 +123,8 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _ThinFilm_Power: 1.5
-    - _Thin_Film_Opacity: 0
+    - _ThinFilm_Power: 0
+    - _Thin_Film_Opacity: 1
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
