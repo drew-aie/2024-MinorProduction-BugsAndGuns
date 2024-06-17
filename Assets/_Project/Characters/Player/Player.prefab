@@ -145,7 +145,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2783488136288345734}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.35
@@ -164,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxLives: 3
   _remainingLives: 3
+  _gameOverScreen: {fileID: 0}
 --- !u!1001 &6332499862126241485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -310,6 +311,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1707964204237136534, guid: 721b7948f06053d4a8d260f3bd3ca0ce,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: cce001cccb8d1dd44a2e12559bc360a6, type: 2}
     - target: {fileID: 1751770813084193032, guid: 721b7948f06053d4a8d260f3bd3ca0ce,
         type: 3}
       propertyPath: m_Layer
@@ -650,6 +656,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6018792545390964799, guid: 721b7948f06053d4a8d260f3bd3ca0ce,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: eb22cf07de0ee1a47ba696e1dc0f8a4d, type: 2}
     - target: {fileID: 6083971942378429873, guid: 721b7948f06053d4a8d260f3bd3ca0ce,
         type: 3}
       propertyPath: m_Layer
@@ -820,7 +831,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1707964204237136534, guid: 721b7948f06053d4a8d260f3bd3ca0ce, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 721b7948f06053d4a8d260f3bd3ca0ce, type: 3}
 --- !u!4 &1635452779514322465 stripped
 Transform:
