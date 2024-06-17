@@ -108,7 +108,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pointValue: 100
-  _scoreCounter: {fileID: 0}
+  _scoreCounter: {fileID: 4935959410753308044, guid: 477e3d61165a61a4896f66294f6260ac,
+    type: 3}
 --- !u!1 &4114232571846733184
 GameObject:
   m_ObjectHideFlags: 0

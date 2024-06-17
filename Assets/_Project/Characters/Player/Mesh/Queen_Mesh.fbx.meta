@@ -3,7 +3,22 @@ guid: 3a1aca542ebc0494eb68fb701f339641
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body1
+    second: {fileID: 2100000, guid: 3d8cd987088fb944fabc4207975a357a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head2
+    second: {fileID: 2100000, guid: 4da8f5c47c704f74b98c694dbfa33fe9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: QueenBeeWings
+    second: {fileID: 2100000, guid: e5354b2c3bbe4f6469e608e31c8c6148, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
