@@ -140,7 +140,7 @@ Material:
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _Fresnel_Add: 0
-    - _Fresnel_Power: 1.78
+    - _Fresnel_Power: 3
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
