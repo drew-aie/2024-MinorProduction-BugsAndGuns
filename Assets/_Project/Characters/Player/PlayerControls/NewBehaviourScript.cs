@@ -15,15 +15,6 @@ public class NewBehaviourScript : MonoBehaviour
     private Rigidbody _rigidBody;
     private Vector3 _movementInput;
     private bool _isShooting = false;
-    private State _currentState;
-
-    enum State
-    {
-        IDLE,
-        MOVING,
-        ATTACKING,
-        DYING
-    };
 
     private Animator _animator;
 
@@ -36,7 +27,6 @@ public class NewBehaviourScript : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         _movementInput = context.action.ReadValue<Vector3>();
-        _currentState = State.MOVING;
     }
 
     public void OnShoot(InputAction.CallbackContext context)
@@ -44,7 +34,6 @@ public class NewBehaviourScript : MonoBehaviour
         if (context.performed)
         {
             _isShooting = true;
-            _currentState = State.ATTACKING;
         }
 
         else if (context.canceled)
