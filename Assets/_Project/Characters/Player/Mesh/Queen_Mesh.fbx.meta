@@ -18,7 +18,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: QueenBeeWings
-    second: {fileID: 2100000, guid: 3d8cd987088fb944fabc4207975a357a, type: 2}
+    second: {fileID: 2100000, guid: e5354b2c3bbe4f6469e608e31c8c6148, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
