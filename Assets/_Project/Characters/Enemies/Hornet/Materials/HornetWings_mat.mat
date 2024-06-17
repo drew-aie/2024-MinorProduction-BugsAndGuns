@@ -138,17 +138,18 @@ Material:
     - _Surface: 0
     - _ThinFilm_Power: 0
     - _Thin_Film_Opacity: 0
+    - _Transparency_strength: 0.4
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _fresnel_power: 4
-    - _thin_film_strength: 1.5
+    - _fresnel_power: 0.09
+    - _thin_film_strength: 0.74
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Fresnel_Color: {r: 1, g: 1, b: 1, a: 0}
     - _Hit_Flash_Color: {r: 1, g: 0, b: 0, a: 0}
-    - _Noise_offset: {r: 0.3, g: 0.3, b: 0, a: 0}
+    - _Noise_offset: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &356538868905465335
