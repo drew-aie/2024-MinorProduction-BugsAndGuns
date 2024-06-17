@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 2
-  _despawnTime: 3.2
+  _despawnTime: 1.2
   _tag: Player
 --- !u!136 &796893913821934892
 CapsuleCollider:
