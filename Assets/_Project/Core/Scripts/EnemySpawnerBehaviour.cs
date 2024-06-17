@@ -32,9 +32,6 @@ public class EnemySpawnerBehaviour : MonoBehaviour
             StartCoroutine(SpawnEnemy());
 
         _despawnTimer -= Time.deltaTime;
-
-        if (_despawnTimer <= 0.000001f)
-            DespawnEnemy(_newEnemy);
     }
 
     public IEnumerator SpawnEnemy()
@@ -55,6 +52,10 @@ public class EnemySpawnerBehaviour : MonoBehaviour
         //If the spawn interval is greater than or equal to 5 seconds, subtract 2 seconds.
         if (_defaultSpawnInterval >= 5.00000)
             _defaultSpawnInterval -= 2;
+
+        //If the despawn timer ends, despawn the previously spawned enemy.
+        if (_despawnTimer <= 0.000001f)
+            DespawnEnemy(_enemy);
     }
 
     public void DespawnEnemy(GameObject enemy)

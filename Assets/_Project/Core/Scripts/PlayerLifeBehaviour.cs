@@ -8,6 +8,8 @@ public class PlayerLifeBehaviour : MonoBehaviour
 
     [SerializeField] private int _remainingLives;
 
+    [SerializeField] private GameOverScreenBehaviour _gameOverScreen;
+
     private bool _isInvincible = false;
 
     private Animator _animator;
