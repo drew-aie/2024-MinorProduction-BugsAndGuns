@@ -67,6 +67,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 2
   _health: 2
+  _delayBeforeDeath: 2
+  _deathAnimationTriggerName: 
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!136 &588233174675908035
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -94,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _projectileSpawner: {fileID: 8041308130892361140}
-  _shotSpeed: 100
+  _shotSpeed: 200
 --- !u!114 &8486055269514656400
 MonoBehaviour:
   m_ObjectHideFlags: 0
