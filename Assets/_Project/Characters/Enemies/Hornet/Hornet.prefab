@@ -85,6 +85,11 @@ PrefabInstance:
       propertyPath: _delayBeforeDeath
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2490654117732033714, guid: 4d0ba18bd515a4649846dbe9b93a60d8,
+        type: 3}
+      propertyPath: _shotSpeed
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 3574483461107395454, guid: 4d0ba18bd515a4649846dbe9b93a60d8,
         type: 3}
       propertyPath: m_Name

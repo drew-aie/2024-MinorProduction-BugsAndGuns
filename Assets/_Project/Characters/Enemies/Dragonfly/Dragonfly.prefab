@@ -21,6 +21,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightProjectileSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 2490654117732033714, guid: 4d0ba18bd515a4649846dbe9b93a60d8,
+        type: 3}
+      propertyPath: _shotSpeed
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 3321077132275981455, guid: 4d0ba18bd515a4649846dbe9b93a60d8,
         type: 3}
       propertyPath: m_LocalPosition.z

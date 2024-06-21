@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _projectileSpawner: {fileID: 6874242064110920286}
-  _shotSpeed: 5
+  _shotSpeed: 5000
   _maxSpeed: 0
   _acceleration: 0
 --- !u!54 &5248132849855583974
