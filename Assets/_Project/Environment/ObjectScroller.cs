@@ -13,7 +13,7 @@ using UnityEngine;
 /// </summary>
 public class ObjectScroller : MonoBehaviour
 {
-    [SerializeField, Range(0, 5), Tooltip("How quickly children should move relative to this object")]
+    [SerializeField, Min(0), Tooltip("How quickly children should move relative to this object")]
     private float _scrollSpeed = 1;
 
     private List<Transform> _children = new List<Transform>();
@@ -41,13 +41,13 @@ public class ObjectScroller : MonoBehaviour
             item.localPosition += new Vector3(0, 0, -_scrollSpeed) * Time.deltaTime;
 
             // If item has gone below _maxDistance, reset it to the top
-            if (item.localPosition.z > _maxDistance)
+            if (item.localPosition.z < -_maxDistance)
             {
                 Vector3 newPosition = item.localPosition;
                 // We subtract _maxDistance rather than setting it to transform.position.z
                 //   to preserve the small fraction that it has gone over the edge.
                 // This prevents a gap from forming between objects.
-                newPosition.z -= _maxDistance;
+                newPosition.z += _maxDistance;
                 item.localPosition = newPosition;
             }
         }
