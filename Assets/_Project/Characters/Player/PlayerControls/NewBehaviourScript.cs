@@ -56,7 +56,7 @@ public class NewBehaviourScript : MonoBehaviour
         //If the player is shooting and has a projectile spawner, fire bullets
         if (_isShooting && _projectileSpawner)
         {
-            _projectileSpawner.Fire(transform.forward * _shotSpeed);
+            _projectileSpawner.Fire(transform.forward * _shotSpeed * Time.deltaTime);
         }
         _animator.SetFloat("Idle-Side", _movementInput.x);
         _animator.SetBool("IsShooting", _isShooting);
